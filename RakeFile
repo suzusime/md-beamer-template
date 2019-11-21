@@ -1,0 +1,9 @@
+file 'slide.tex' => 'slide.md' do
+    sh "pandoc --latex-engine=lualatex -t beamer -V theme=ExecusharesMod --standalone -o slide.tex slide.md"
+end
+
+file 'slide.pdf' => 'slide.tex' do
+    sh "latexmk -lualatex slide.tex"
+end
+
+task :default => 'slide.pdf'

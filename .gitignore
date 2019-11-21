@@ -1,0 +1,11 @@
+slide.tex
+slide.pdf
+
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.snm
+*.toc
